@@ -19,7 +19,7 @@ services:
   php:
     image: php:latest
     volumes:
-      - ./php:/var/www/html,
+      - ./php:/var/www/html
     deploy:
       replicas: 2
       resources:
