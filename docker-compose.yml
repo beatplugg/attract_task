@@ -5,7 +5,7 @@ services:
     image: nginx:latest
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./logs/nginx:/var/log/nginx
+      - nginx_logs:/var/log/nginx
     ports:
       - 80:80
     deploy:
@@ -22,7 +22,7 @@ services:
     image: php:fpm
     volumes:
       - ./php:/var/www/html
-      - ./logs/php:/var/log/php
+      - php_logs:/var/log/php
     deploy:
       mode: replicated
       replicas: 1
@@ -32,6 +32,10 @@ services:
           memory: 512M
     networks:
       - attract_network
+
+volumes:
+  nginx_logs:
+  php_logs:
 
 networks:
   attract_network:
