@@ -1,19 +1,24 @@
-# Attact Group Tasks
+# Attract Group Tasks
 
 ## Description
-This repo is being used to set up a Docker application consisting of 2 components: NGINX and PHP. Also here you can find a theoretical part of this task - architectural diagram of the project on AWS Cloud.
+This repository is a part of technical task given by Attract Group. It is being used to share theoretical part of the task (architectural diagram of the project on AWS Cloud) and set up a Docker application consisting of 2 components: NGINX and PHP. 
 
 # NGINX and PHP Docker Application
 
-## Requirments
+## Requirements
 
+- Linux;
 - Docker;
 - Docker Compose.
 
-## Prerequisites 
+## Application launch steps 
 
 - Clone the repository
-- cd into attract_task directory
+- Run 'cd attract_task'
 - Run 'docker swarm init'
-- Run 'docker stack deploy -c docker-compose.yml <name_of_the_project>'
-- Use the browser to connect to the running page (you will see a page with description of practical task running and links to my pages.)
+- Run 'docker stack deploy -c docker-compose.yml <name_of_the_stack>'
+- Use the browser to connect to the running page (you will see a page with description of practical task and links to my profiles)
+
+# Theoretical part
+
+In Theoretical part directory you can find a pdf file with AWS Diagram. 
