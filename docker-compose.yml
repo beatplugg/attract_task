@@ -13,8 +13,6 @@ services:
         limits: 
           cpus: '0.5'
           memory: 512M
-    networks:
-      - swarm_network
 
   php:
     image: php:latest
@@ -26,10 +24,3 @@ services:
         limits:
           cpus: '0.5'
           memory: 512M
-    networks: 
-      - swarm_network
-
-
-networks:
-  swarm_network:
-    driver: overlay
