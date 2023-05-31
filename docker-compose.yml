@@ -19,7 +19,7 @@ services:
       - attract_network
 
   php:
-    image: php:latest
+    image: php:fpm
     volumes:
       - ./php:/var/www/html
       - php_logs:/var/log/php
