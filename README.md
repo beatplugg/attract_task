@@ -25,4 +25,4 @@ In Theoretical part directory you can find AWS Diagram.pdf and AWS Diagram.drawi
 
 # P.S.
 
-All parts of the practical task were launched and tested on an EC2 Ubuntu instance in AWS Cloud.
+## All parts of the practical task were launched and tested on an EC2 Ubuntu instance in AWS Cloud.
